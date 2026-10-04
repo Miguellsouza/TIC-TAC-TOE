@@ -25,6 +25,20 @@ This game was proposed by **Cisco** as a hands-on project in one of its Python f
 python Tic-tac-toe.py
 ```
 
+## Game Rules
+
+These rules describe how the game currently behaves:
+
+1. **Board:** a 3x3 grid with squares numbered 1 to 9, row by row. A free square shows its number; an occupied square shows `X` or `O`.
+2. **Symbols:** the player uses `X` and the computer uses `O`.
+3. **Turn order:** in every round the computer moves first, then the player.
+4. **Computer moves:** the computer picks a random number from 1 to 9. It does not check whether the square is free.
+5. **Player moves:** the player types the number of the square they want.
+6. **Occupied or invalid squares:** if the chosen square is already occupied, or the number is outside 1–9, **the turn is lost**. The board stays unchanged and the game moves on to the next round. This applies to both the computer and the player.
+7. **Non-numeric input:** typing something that is not a number (like a letter) crashes the program.
+8. **Winning:** a player wins by filling an entire row, column or diagonal with the same symbol. The check happens at the end of each round, after both moves.
+9. **Draw:** if all 9 squares are filled, the game ends. No draw message is shown.
+
 ## How to Play
 
 1. The bot places an `O` on a random square and the board is displayed.
